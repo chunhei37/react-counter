@@ -1,3 +1,4 @@
+//Inspired by https://github.com/drminnaar/react-clicker
 import React from "react";
 import Button from "react-bootstrap/Button";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
@@ -8,6 +9,7 @@ import Card from "react-bootstrap/Card";
 import "./bootstrap.min.css";
 
 class Counter extends React.Component {
+  //Constructor to store the counter value and events
   constructor(props) {
     super();
     this.state = {
@@ -17,16 +19,21 @@ class Counter extends React.Component {
     this.minusValue = this.minusValue.bind(this);
   }
 
+  //add value to the counter
   addValue = () => {
     this.setState(i => ({ value: i.value + 1 }));
   };
+  //minus value to the counter
   minusValue = () => {
     this.setState(i => ({ value: i.value - 1 }));
   };
+  //reset value to the counter
   resetValue = () => {
     this.setState({ value: 0 });
   };
 
+
+  // render counter elements
   render() {
     return (
       <Container className="pt-5">
