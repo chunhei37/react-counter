@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The idea of this counter was inspired by https://github.com/drminnaar/react-clicker
+But I recreated it based on my understanding and with react-bootstrap.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
